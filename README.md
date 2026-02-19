@@ -1,6 +1,2 @@
-LGMPAS: LLM-Guided Machine Pseudo-Absences for Species Distribution Modelling
-
-This repository contains the code and data-processing scripts for the paper:
-“LLM-guided pseudo-absence generation for freshwater crayfish in network-constrained habitats”
-
-The LGMPAS framework integrates environmental predictors, network topology, and natural-language eco-narratives to generate ecologically realistic pseudo-absences using large language models (LLMs). It is designed for freshwater river networks but is generalizable to other spatially structured systems.
+LGMPAS: LLM-guided pseudo-absence generation for network-constrained SDMs
+This repository contains end-to-end Python code accompanying the manuscript “LLM-guided pseudo-absence generation for freshwater crayfish in network-constrained habitats.” LGMPAS samples pseudo-absences at 5×5 km CellID resolution using (i) RANDOM, (ii) distribution-aware CONTROLLED sampling from unlabelled units, and (iii) an LLM-guided variant that scores a controlled shortlist and applies band-capping before final selection. The repo includes two complete pipelines (AUB and FXL), scripts to reproduce tables/diagnostics, and cached JSON outputs for fully auditable LLM scoring.
